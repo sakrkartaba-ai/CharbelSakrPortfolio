@@ -240,7 +240,7 @@
             height: 40px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.1);
-            color: white;
+            color: #140fd7;
             transition: all 0.3s ease;
             margin: 0 0.25rem;
         }
@@ -263,4 +263,5 @@
             .section {
                 padding: 3rem 0;
             }
+
         }
