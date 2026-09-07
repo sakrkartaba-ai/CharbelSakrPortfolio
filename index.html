@@ -1,338 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charbel E. Sakr</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta name="description" content="Personal website of Charbel E. Sakr, a software engineer with a passion for building scalable and efficient systems.">
-    <meta name="keywords" content="Charbel E. Sakr, software engineer, personal website, scalable systems, efficient systems, open source, programming, technology">
-    <meta name="author" content="Charbel E. Sakr">                          
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charbel Sakr — Front-end Developer &amp; IT Support</title>
+<meta name="description" content="Charbel Sakr — front-end developer and IT support specialist based in Byblos, Lebanon. React, Next.js, PHP and MySQL development alongside NGO systems administration.">
+<meta name="keywords" content="Charbel Sakr, front-end developer, IT support, React, Next.js, Byblos, Lebanon, web developer">
+<meta name="author" content="Charbel Sakr">
+<link rel="icon" href="assets/favicon-32.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="bi bi-code-slash me-2"></i>Charbel Sakr
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a class="brand" href="#home">
+      <span class="brand-mark">CS</span>
+      <span class="brand-name">Charbel&nbsp;Sakr</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#contact" data-nav>Contact</a>
+      <a href="assets/Charbel-Sakr-Resume.pdf" class="nav-cta" target="_blank" rel="noopener">Résumé</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1 order-2">
-                    <h4 class="text-primary mb-3">SOFTWARE ENGINEER</h4>
-                    <h1 class="display-5 fw-bold mb-4">Charbel E. Sakr</h1>
-                    <p class="lead mb-4">Building <span class="highlight">scalable systems</span> and <span class="highlight">efficient solutions</span> with cutting-edge technologies. Passionate about solving complex problems through clean, maintainable code.</p>
-                    <div class="d-flex flex-wrap mt-5">
-                        <a href="#contact" class="btn btn-primary btn-lg px-4 py-2 me-3 mb-3">Contact Me</a>
-                        <a href="#projects" class="btn btn-outline-primary btn-lg px-4 py-2 mb-3">View Projects</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center order-lg-2 order-1 mb-5 mb-lg-0">
-                    <img src="sakr.png" alt="Charbel Sakr" class="profile-img rounded-circle">
-                </div>
-            </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Byblos, Lebanon</p>
+        <h1>Charbel Sakr</h1>
+        <p class="hero-role">Front-end Developer <span class="dot-sep">·</span> IT Support &amp; Systems Administration</p>
+        <p class="hero-lede">I build interfaces with React and Next.js and keep the systems behind them — accounting software, Microsoft&nbsp;365, staff PCs and networks — running for a Byblos-based NGO. Lately, AI tools do a lot of the heavy lifting on performance and day-to-day productivity.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="assets/Charbel-Sakr-Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download résumé</a>
         </div>
-    </section>
+      </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section bg-white">
-        <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            
-            <div class="row mb-5">
-                <div class="col-md-3 mb-4">
-                    <div class="stat-card">
-                        <div class="stat-number">4+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="stat-card">
-                        <div class="stat-number">25+</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="stat-card">
-                        <div class="stat-number">7+</div>
-                        <div class="stat-label">Technologies</div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="stat-card">
-                        <div class="stat-number">5K+</div><span>K</span>
-                        <div class="stat-label">Lines of Code</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-header">Frontend Development</div>
-                        <div class="card-body">
-                            <div class="mb-4">
-                                <span class="skill-badge">React</span>
-                                <span class="skill-badge">JavaScript</span>
-                                <span class="skill-badge">HTML5/CSS3</span>
-                                <span class="skill-badge">Bootstrap</span>
-                            </div>
-                            <p>Building responsive, accessible, and performant user interfaces with modern JavaScript frameworks and CSS methodologies.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-header">Backend & DevOps</div>
-                        <div class="card-body">
-                            <div class="mb-4">
-                                <span class="skill-badge">PHP</span>
-                                <span class="skill-badge">Python</span>
-                                <span class="skill-badge">Mysql</span>
-                                <span class="skill-badge">PhpmyAdmin</span>
-                                <span class="skill-badge">REST APIs</span>
-                                <span class="skill-badge">Queries</span>
-                            </div>
-                            <p>Developing scalable server-side applications and implementing CI/CD pipelines for efficient deployment workflows.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img src="assets/sakr.png" alt="Portrait of Charbel Sakr" width="256" height="256">
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <h4>Software Engineer</h4>
-                                    <h5 class="text-primary">Tech Innovations Inc. • 2021 - Present</h5>
-                                    <ul>
-                                        <li>Developed small business SaaS platform serving local and foreign users online</li>
-                                        <li>Optimized database queries, improving application performance by 65%</li>
-                                        <li>Reduced critical bugs by 80% through implementation of comprehensive testing with the use of AI</li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="timeline-item">
-                                    <h4>Software Developer</h4>
-                                    <h5 class="text-primary">Global Solutions Ltd. • 2018 - 2021</h5>
-                                    <ul>
-                                        <li>Has started putting code into practice that increasing knowledge of systems by 40%</li>
-                                        <li>In CET, developped functions improving team productivity by 25%</li>
-                                        <li>In Matelec, helped financial department 'Melec' IT to program their excel to reduce manual calculations</li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="timeline-item">
-                                    <h4>Junior Developer</h4>
-                                    <h5 class="text-primary">StartUp Ventures • 2016 - 2018</h5>
-                                    <ul>
-                                        <li>supported a control unit department in IT that was responsible to manage 250 workers in Janna Dam</li>
-                                        <li>Learned Javascript, css, html</li>
-                                        <li>Learned Java, and sql queries<li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,40 C240,90 480,0 720,30 C960,60 1200,10 1440,45 L1440,90 L0,90 Z"></path>
+    </svg>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div>
+        <p class="kicker">About</p>
+        <h2>IT support and front-end development, under one roof</h2>
+        <p class="about-copy">I started out on the IT support side — daily site reporting on the Janna Dam project, then office IT and accounting-system administration for Credit&nbsp;Trust in Beirut. Since 2022 I've run systems administration for Mena&nbsp;THRC, an NGO in Byblos, while building and maintaining their web-based data management system end to end.</p>
+        <p class="about-copy">That mix is still how I work: I'm as comfortable behind a React or Next.js front end as I am behind a helpdesk ticket, and I lean on AI tooling to move faster through both — optimizing performance on the code side, and cutting the busywork on the support side.</p>
+      </div>
+
+      <aside class="quick-facts">
+        <div class="fact">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 21c5-5 8-8.5 8-12a8 8 0 10-16 0c0 3.5 3 7 8 12z"/></svg>
+          <div>
+            <div class="fact-label">Based in</div>
+            <div class="fact-value">Amchit, Byblos, Lebanon</div>
+          </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section bg-white">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">React • Node.js • MySql</span>
-                            <h5 class="card-title">Cloud Infrastructure Manager</h5>
-                            <p class="card-text">Interactive Dashboards</p>
-                            <div class="mt-3">
-                                <span class="badge bg-success me-1">Reduced costs by 35%</span>
-                                <span class="badge bg-info">10K+ users</span>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-sm btn-outline-primary">Microsoft 365 for buisness(premium/standard)</a>
-                            <a href="#" class="btn btn-sm btn-primary ms-2">Power automate automation and sharepoint</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">Designing any website look and feel with CSS</span>
-                            <h5 class="card-title">using flex display making UI responsive for all devices</h5>
-                            <p class="card-text">using bootstrap for standard implementations and customize on need</p>
-                            <div class="mt-3">
-                                <span class="badge bg-success me-1">!</span>
-                                <span class="badge bg-info">!</span>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-sm btn-outline-primary">Cascading Style Sheets</a>
-                            <a href="#" class="btn btn-sm btn-primary ms-2">Love to design CSS</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">Querying database</span>
-                            <h5 class="card-title">Query any info and integrate in the system</h5>
-                            <p class="card-text">analyzes code quality, detects vulnerabilities, and suggests improvements.</p>
-                            <div class="mt-3">
-                                <span class="badge bg-success me-1">!</span>
-                                <span class="badge bg-info">!</span>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="#" class="btn btn-sm btn-outline-primary">Case Study</a>
-                            <a href="#" class="btn btn-sm btn-primary ms-2">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="fact">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M12 3v9l6 3"/><circle cx="12" cy="12" r="9"/></svg>
+          <div>
+            <div class="fact-label">Currently</div>
+            <div class="fact-value">IT Support &amp; Systems Administrator, Mena THRC</div>
+          </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-card">
-                        <div class="row">
-                            <div class="col-md-6 mb-4 mb-md-0">
-                                <div class="text-center">
-                                    <div class="contact-icon mx-auto">
-                                        <i class="bi bi-envelope"></i>
-                                    </div>
-                                    <h5>Email Me</h5>
-                                    <p>charbelsakr_2012@hotmail.com</p>
-                                    <a href="mailto:charbelsakr_2012@hotmail.com" class="btn btn-outline-primary">Send Message</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text-center">
-                                    <div class="contact-icon mx-auto">
-                                        <i class="bi bi-chat-dots"></i>
-                                    </div>
-                                    <h5>Connect With Me</h5>
-                                    <div class="d-flex justify-content-center mt-4">
-                                        <a href="https://wa.me/+96170784464" class="social-link">
-                                          <i class="bi bi-whatsapp"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="text-center mt-5">
-                        <h4 class="mb-4">Open to new opportunities</h4>
-                        <p class="text-muted">Currently available for full-time positions, contract work, and consulting engagements.</p>
-                        <a href="Resume Charbel Sakr-CV25.pdf" target="_blank" class="btn btn-primary px-5 py-3 mt-2">Download Resume</a>
-                    </div>
-                </div>
-            </div>
+        <div class="fact">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
+          <div>
+            <div class="fact-label">Languages</div>
+            <div class="fact-value">Arabic, English, French, Spanish</div>
+          </div>
         </div>
-    </section>
+      </aside>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h4 class="mb-3">Charbel E. Sakr</h4>
-                    <p>Software Engineer specializing in building scalable and efficient systems with modern technologies.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <h5 class="mb-3">Navigation</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
-                        <li><a href="#experience" class="text-white text-decoration-none">Experience</a></li>
-                        <li><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
-                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="my-4 bg-light opacity-10">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 Charbel E. Sakr. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p>Designed with <i class="bi bi-heart-fill text-danger"></i> for recruiters</p>
-                </div>
-            </div>
+  <!-- ============ SKILLS ============ -->
+  <section class="section alt" id="skills">
+    <div class="section-inner">
+      <p class="kicker">Skills</p>
+      <h2>What I work with</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Web development</h3>
+          <div class="chips">
+            <span class="chip">React.js</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">PHP</span>
+            <span class="chip">HTML / CSS</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">MySQL</span>
+          </div>
         </div>
-    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+        <div class="skill-group">
+          <h3>AI-assisted development</h3>
+          <div class="chips">
+            <span class="chip">Performance optimization</span>
+            <span class="chip">Productivity workflows</span>
+          </div>
+        </div>
 
+        <div class="skill-group">
+          <h3>IT support &amp; systems</h3>
+          <div class="chips">
+            <span class="chip">Helpdesk</span>
+            <span class="chip">Problem-solving</span>
+            <span class="chip">Network &amp; PC maintenance</span>
+            <span class="chip">Microsoft 365</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <div class="chips">
+            <span class="chip">Microsoft Office</span>
+            <span class="chip">phpMyAdmin</span>
+            <span class="chip">Adobe Premiere</span>
+            <span class="chip">After Effects</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="languages">
+        <h3>Languages</h3>
+        <ul class="lang-list">
+          <li><span class="lang-name">English</span><span class="lang-dots" aria-label="5 out of 5"><i class="d on"></i><i class="d on"></i><i class="d on"></i><i class="d on"></i><i class="d on"></i></span></li>
+          <li><span class="lang-name">Arabic</span><span class="lang-dots" aria-label="5 out of 5"><i class="d on"></i><i class="d on"></i><i class="d on"></i><i class="d on"></i><i class="d on"></i></span></li>
+          <li><span class="lang-name">French</span><span class="lang-dots" aria-label="3 out of 5"><i class="d on"></i><i class="d on"></i><i class="d on"></i><i class="d"></i><i class="d"></i></span></li>
+          <li><span class="lang-name">Spanish</span><span class="lang-dots" aria-label="2 out of 5"><i class="d on"></i><i class="d on"></i><i class="d"></i><i class="d"></i><i class="d"></i></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="kicker">Experience</p>
+      <h2>Where I've worked</h2>
+
+      <ol class="timeline">
+        <li class="t-item">
+          <div class="t-head">
+            <h3>IT Support &amp; Systems Administrator</h3>
+            <span class="t-date">Oct 2022 – Present</span>
+          </div>
+          <p class="t-org">Mena THRC (NGO) — Byblos</p>
+          <ul class="t-bullets">
+            <li>System administrator for the accounting system, Classe365, and Microsoft 365; manage the database</li>
+            <li>Built and continue to maintain a custom web-based data management system for THRC</li>
+            <li>Front-end &amp; back-end development: React, PHP, API integration, HTML, Bootstrap, CSS &amp; JavaScript</li>
+            <li>Database structure development with MySQL and phpMyAdmin</li>
+            <li>Support staff PCs and network management; document control &amp; reporting</li>
+            <li>Video editing with Adobe Premiere &amp; After Effects</li>
+          </ul>
+        </li>
+
+        <li class="t-item">
+          <div class="t-head">
+            <h3>IT Support</h3>
+            <span class="t-date">Jun 2021 – 2022</span>
+          </div>
+          <p class="t-org">Credit Trust — Port, Beirut</p>
+          <ul class="t-bullets">
+            <li>IT office support: software and equipment management</li>
+            <li>Administered the ICBS accounting system for Banque du Liban</li>
+          </ul>
+        </li>
+
+        <li class="t-item">
+          <div class="t-head">
+            <h3>IT Support &amp; Reporting</h3>
+            <span class="t-date">Jan 2017 – Jan 2021</span>
+          </div>
+          <p class="t-org">Consolidated Engineering and Trading Company — Janna</p>
+          <ul class="t-bullets">
+            <li>Document control &amp; daily site report officer with IT support</li>
+            <li>CET and AG companies, Janna Dam construction office (Janna Dam Project, 2018–2021)</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section alt" id="education">
+    <div class="section-inner">
+      <p class="kicker">Education</p>
+      <h2>Background</h2>
+
+      <div class="edu-grid">
+        <div class="edu-item">
+          <h3>Bachelor's Degree in ITC</h3>
+          <p class="t-org">Arab Open University — Badaro <span class="t-date inline">May 2015 – Jun 2020</span></p>
+          <p class="edu-note">Information Technology &amp; Computing: programming and technologies</p>
+        </div>
+        <div class="edu-item">
+          <h3>Front-end Development — Industry Training Certificate</h3>
+          <p class="t-org">Brainnest</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact-section" id="contact">
+    <div class="section-inner contact-inner">
+      <p class="kicker light">Contact</p>
+      <h2 class="light">Let's talk</h2>
+      <p class="contact-lede">Open to front-end, IT support, and hybrid systems-administration roles. The fastest way to reach me is email or WhatsApp.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:charbelsakr_2012@hotmail.com">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+          <div>
+            <div class="fact-label">Email</div>
+            <div class="fact-value">charbelsakr_2012@hotmail.com</div>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://wa.me/96170784464" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M4 4c0 9 7 16 16 16l3-4-6-3-2 2c-2-1-4-3-5-5l2-2-3-6z"/></svg>
+          <div>
+            <div class="fact-label">Phone / WhatsApp</div>
+            <div class="fact-value">+961 70 784 464</div>
+          </div>
+        </a>
+
+        <div class="contact-card static">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 21c5-5 8-8.5 8-12a8 8 0 10-16 0c0 3.5 3 7 8 12z"/></svg>
+          <div>
+            <div class="fact-label">Location</div>
+            <div class="fact-value">Amchit, Byblos, Lebanon</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="assets/Charbel-Sakr-Resume.pdf" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Download résumé</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <span>© <span id="year"></span> Charbel Sakr</span>
+    <a href="#home">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
-
-
-
-
-
-
